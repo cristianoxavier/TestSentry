@@ -6,7 +6,7 @@ import os
 os.getenv("DNS_SENTRY")
 
 sentry_sdk.init(
-    dsn="https://99c3a202eed5459d8e7ee884062483eb@o1300365.ingest.sentry.io/6534713",
+    dsn=DNS_SENTRY,
     integrations=[
         FlaskIntegration(),
     ],
